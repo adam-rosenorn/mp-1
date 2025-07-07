@@ -3,26 +3,51 @@
     <head>
         <meta charset="UTF-8">
         <title>Projects | Resume</title>
+        <link rel="stylesheet" type="text/css" href="./projects.css">
     </head>
     <body>
-        <header>
-            <h1>Adam Rosenorn</h1>
-            <p>Hi and welcome to my resume, here you can learn a little bit about me</p>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../edu/education.html">Education</a></li>
-                <li><a href="../emp/employment.html">Employment</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="../vol/volunteering.html">Volunteering</a></li>
-            </ul>
-        </nav>
-        <main>
+        <div id="wrapper">
+            <header>
+                <h1>Adam Rosenorn</h1>
+                <p id="wide-header">Hi and welcome to my resume, here you can learn a little bit about me</p>
+                <p id="narrow-header">Welcome to my online resume</p>
+            </header>
+            <div id="container">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../edu/education.html">Education</a></li>
+                        <li><a href="../emp/employment.html">Employment</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="../vol/volunteering.html">Volunteering</a></li>
+                        <li><a href="../ref/references.html">References</a></li>
+                    </ul>
+                </nav>
+                <main>
+                    <h2>Projects</h2>
+                    <h3>Calculator</h3>
+                    <div id="calculator">
+                        <div>
+                            <label for="first-number"></label><input id="first-number">
+                            <label for="second-number"></label><input id="second-number">
+                        </div>
+                        <div>
+                            <button onclick="addFunc()">+</button>
+                            <button onclick="subFunc()">-</button>
+                            <button onclick="multFunc()">*</button>
+                            <button onclick="divFunc()">/</button>
+                            <button onclick="powFunc()">**</button>
+                            <button id="clear" onclick="clearFunc()">Clear</button>
+                            <h3 id="output"></h3>
+                        </div>
+                    </div>
 
-        </main>
-        <footer>
-            <p>&#169; All rights reserved <a href="">Credits</a></p>
-        </footer>
+                </main>
+            </div>
+            <footer>
+                <p>&#169; All rights reserved <a href="">Credits</a></p>
+            </footer>
+        </div>
+        <script src="projects.js"></script>
     </body>
 </html>

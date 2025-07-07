@@ -22,7 +22,12 @@ screen sizes.
 main h2{
     padding: 2%;
     font-size: calc(4px + 1vh + 1vw);
-    margin-bottom: 6%;
+    margin-bottom: 5%;
+}
+
+main h4{
+    padding: 2%;
+    margin-bottom: 3%;
 }
 
 .main-text{
@@ -89,7 +94,6 @@ nav ul{
     flex-direction: column;
 }
 
-
 nav li{
     border-right: 2px solid #C7EEFF;
     border-bottom: 2px solid #C7EEFF;
@@ -112,47 +116,29 @@ body{
     font-family: Monaco, "Courier New", "Lucida Grande", monospace;
 }
 
-#first-number, #second-number{
-    height: calc(5vw + 3vh);
-    width: calc(5vw + 3vh);
-    background-color: #2185D5;
-    text-align: center;
-    margin-top: 10%;
-    margin-right: 8%;
-    margin-bottom: 10%;
-    margin-left: 8%;
-    color: #F3F3F3;
-    border-top: 2px solid #C7EEFF;
-    border-right: 2px solid #C7EEFF;
-    border-bottom: 2px solid #C7EEFF;
-    border-left: 2px solid #303841;
-    font-size: calc(2px + 1vh + 1vw);
+table{
+    border:  3px solid #303841;
+    margin: auto;
+    max-width: 85%;
+    background-color: #C7EEFF;
 }
 
-#calculator{
-    display: flex;
-    flex-direction: column;
-}
-
-button{
+th{
+    border:  3px solid #303841;
+    height: 8vh;
+    width: 10vw;
+    font-size: calc(2px + 0.6vw + 0.6vh);
     background-color: #2185D5;
     color: #F3F3F3;
-    border-top: 2px solid #C7EEFF;
-    border-right: 2px solid #C7EEFF;
-    border-bottom: 2px solid #C7EEFF;
-    border-left: 2px solid #303841;
-    height: calc(2vw + 1vh);
-    width: calc(2vw + 1vh);
-    text-align: center;
-    margin-bottom: 3%;
 }
 
-#clear{
-    width: calc(4vw + 1vh);
-}
 
-#output{
-    font-size: calc(2px + 1vh + 1vw);
+td{
+    border:  3px solid #303841;
+    height: 15vh;
+    font-size: calc(2px + 0.6vw + 0.6vh);
+    background-color: #2185D5;
+    color: #F3F3F3;
 }
 
 
@@ -205,24 +191,7 @@ button{
         text-align: center;
     }
 
-    button{
-        height: calc(1vw + 5vh);
-        width: calc(1vw + 5vh);
-        margin-bottom: 8%;
-    }
-
-    #first-number, #second-number{
-        height: calc(5vw + 9vh);
-        width: calc(5vw + 9vh);
-        font-size: calc(2px + 2vh + 1vw);
-        margin-bottom: 15%;
-    }
-
-    #clear{
-        width: calc(1vw + 10vh);
-    }
-
-    #output{
-        font-size: calc(2px + 2vh + 1vw);
+    th{
+        width: 20vw;
     }
 }
