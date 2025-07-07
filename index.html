@@ -3,26 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <title>Home | Resume</title>
+        <link rel="stylesheet" type="text/css" href="./index.css">
     </head>
     <body>
-        <header>
-            <h1>Adam Rosenorn</h1>
-            <p>Hi and welcome to my resume, here you can learn a little bit about me</p>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="edu/education.html">Education</a></li>
-                <li><a href="emp/employment.html">Employment</a></li>
-                <li><a href="proj/projects.html">Projects</a></li>
-                <li><a href="vol/volunteering.html">Volunteering</a></li>
-            </ul>
-        </nav>
-        <main>
-
-        </main>
-        <footer>
-            <p>&#169; All rights reserved <a href="">Credits</a></p>
-        </footer>
+        <div id="wrapper">
+            <header>
+                <h1>Adam Rosenorn</h1>
+                <p id="wide-header">Hi and welcome to my resume, here you can learn a little bit about me</p>
+                <p id="narrow-header">Welcome to my online resume</p>
+            </header>
+            <div id="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="edu/education.html">Education</a></li>
+                        <li><a href="emp/employment.html">Employment</a></li>
+                        <li><a href="proj/projects.html">Projects</a></li>
+                        <li><a href="vol/volunteering.html">Volunteering</a></li>
+                        <li><a href="temp/temporary.html">Temporary</a></li>
+                    </ul>
+                </nav>
+                <main>
+                    <h2>Home</h2>
+                    <img src="src/main-photo.jpg" alt="Adam Rosenorn">
+                    <h5 class="main-text">
+                        My name is Adam Rosenorn, and I am a student at the <strong>IT University of Copenhagen</strong>,
+                        where I am almost done with my Bachelor's degree in <strong>Data Science</strong>.
+                        This summer i will be attending summer school at Boston University.
+                    </h5>
+                    <h5 class="main-text">
+                        I am currently working as a student assistant at <strong>Hovmand</strong>, where I am helping out with some
+                        internal websites and bettering our use of data. If you have any questions, offers or just want to say hi, feel free to <a href="">contact me</a>.
+                    </h5>
+                </main>
+            </div>
+            <footer>
+                <p>&#169; All rights reserved <a href="">Credits</a></p>
+            </footer>
+        </div>
     </body>
 </html>
